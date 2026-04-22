@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "IAndes",
+  "version": "1.0",
+  "description": "Calcula la huella hídrica de tus chats y optimiza tus prompts.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://chat.openai.com/*",
+        "*://chatgpt.com/*",
+        "*://claude.ai/*",
+        "*://gemini.google.com/*",
+        "*://copilot.microsoft.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
